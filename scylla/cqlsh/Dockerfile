@@ -1,3 +1,3 @@
 #FROM python:alpine
-FROM python:strech-slim
+FROM python:slim-stretch
 RUN pip install cqlsh
