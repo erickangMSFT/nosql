@@ -15,4 +15,4 @@ spec:
         - name: cqlsh
           image: ericskang/cqlsh:latest
           imagePullPolicy: IfNotPresent
-          command: ["tail -f /dev/null"]
+          command: ["tail", "-f", "/dev/null"]
