@@ -6,7 +6,7 @@ metadata:
     app: scylla
 spec:
   serviceName: scylla
-  replicas: 3
+  replicas: 2 
   selector:
     matchLabels:
       app: scylla
