@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: csqlsh
+  name: cqlsh
   labels:
     app: scylla
 spec:
