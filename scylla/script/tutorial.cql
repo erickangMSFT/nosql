@@ -17,3 +17,7 @@ INSERT INTO ks.users (userid, name, email, country) VALUES (uuid(), 'Langston Pa
 INSERT INTO ks.users (userid, name, email, country) VALUES (uuid(), 'Channa Devote', 'cdevote14@marriott.com', 'Denmark');
 
 SELECT * FROM ks.users;
+
+CREATE INDEX ON ks.users (email);
+
+CREATE INDEX ON ks.users (country);
