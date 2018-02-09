@@ -49,7 +49,6 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: status.podIP
-
           readinessProbe:
             exec:
               command:
@@ -78,4 +77,4 @@ spec:
         accessModes: ["ReadWriteOnce"]
         resources:
           requests:
-            storage: 1Gi
+            storage: 5Gi
