@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: csqlsh
+  labels:
+    app: scylla
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: scylla
+    spec:
+      containers:
+        - name: cqlsh
+          image: ericskang/cqlsh:latest
+          imagePullPolicy: IfNotPresent
+          command: ["tail -f /dev/null"]
